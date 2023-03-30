@@ -1,0 +1,22 @@
+doctype html 
+html(lang="es")
+
+head 
+    title Tienda de Video Juegos
+    link(rel="stylesheet", href="/css/estilos.css")
+
+body 
+  h1
+     a(href="/") En este apartado se muestran las consolas agregadas a la base de datos
+  br
+  each valor in Consolas 
+    div.item 
+    img(src="imagenes/"+valor.Imagen,width="200")
+    h2 Titulo:#{valor.Nombre}
+    h3 Precio: $#{valor.Precio}
+    h3 Descripcion: #{valor.descripcion}
+    h3 Contacto: #{valor.Contacto}
+
+
+
+
